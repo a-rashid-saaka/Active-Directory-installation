@@ -55,6 +55,8 @@
 
 
 ![Screenshot (89)](https://github.com/user-attachments/assets/e4919f8e-fe95-40a6-b67e-17cbc112e414)
+- After the installation, notice the flag in the top right corner of the Server Manager. 
+- Click on the flag to promote VM1-DC to a Domain Controller.
 
-- Once the installation is done, notice the flag on the top left of the Server Manager
-- Click on the flag and promote DC-01 to Domain Controller.
+  
+  ![FLag](https://github.com/user-attachments/assets/dac2626b-8ce8-4853-ab54-0aeea882226e)
