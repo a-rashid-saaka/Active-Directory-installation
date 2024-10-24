@@ -45,3 +45,16 @@
 
 - Windows (Windows Server 2019 Datacenter)
 - Windows (Windows 10 Pro)
+
+  <h2>Configuration Steps</h2>
+
+<h3>&#9312; Install Active Directory in DC-01</h3>
+
+
+- In the server manager click on "Add Roles and Features" -> Role-based or feature-based installation -> Select a server from the server pool -> Active Directory domain services -> Add Features, and follow the prompt to complete the installation <br>
+
+
+![Screenshot (89)](https://github.com/user-attachments/assets/e4919f8e-fe95-40a6-b67e-17cbc112e414)
+
+- Once the installation is done, notice the flag on the top left of the Server Manager
+- Click on the flag and promote DC-01 to Domain Controller.
