@@ -74,3 +74,36 @@
 ![DC1](https://github.com/user-attachments/assets/6a193677-2dc5-4868-814e-97517b24d4b9)
 
 - Restart your PC once the setup is complete , and login again using "your admin username"@domain.com, together with the admin password.
+<br>
+<br>
+<br>
+
+<h3>&#9313; Create Organizational Units and Admin user</h3>
+
+- From the server manager, click on "Tools" and select "Active Directory Users and Computers"
+
+![dc](https://github.com/user-attachments/assets/5cf69578-7c46-4f4d-941c-f481e1471457)
+
+- To create an "EMPLOYEES" organizational unit, right click on "domain.com" -> New -> Select "Organizational Unit"
+
+  ![DC2](https://github.com/user-attachments/assets/918b3571-b06e-4dce-8e08-1b5f18def1b7)
+
+- Enter the name of the Organizational Unit and click on "OK".
+
+    ![image](https://github.com/user-attachments/assets/927ffc31-455e-40a0-8593-672da31d8c74)
+
+ - Right click on Users and create a new user named "Sam Samuels" with the username S-Samuels
+
+
+   ![image](https://github.com/user-attachments/assets/46acdade-a2d8-41d0-86a7-4d3ffef87572)
+- To make Sam Samuels an Admin, right click on his name -> Properties -> select " Member of" -> click on "Add" -> search "Domain Admins" and click "OK" -> click on "Apply" and "OK" for the change to take effect
+
+  
+  ![image](https://github.com/user-attachments/assets/7b2371ec-5983-448b-9039-4bd09ec7c1ed)
+![image](https://github.com/user-attachments/assets/fde40a9f-6f52-4539-9558-1ebfbbecf8ca)
+
+
+- You can now log back in to VM1-DC with Sam Samuel's credentials
+
+
+  ![image](https://github.com/user-attachments/assets/f49f741d-b3ae-4e13-8448-affe1cd93007)
