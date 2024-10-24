@@ -60,3 +60,17 @@
 
   
   ![FLag](https://github.com/user-attachments/assets/dac2626b-8ce8-4853-ab54-0aeea882226e)
+
+
+
+- Select "Add a new forest" , enter your domain name, and click "Next"
+
+
+  ![Screenshot (92)](https://github.com/user-attachments/assets/89a31c17-bf4f-4ff6-b721-2ad4c8e09eee)
+
+- Enter restore password and follow the prompt to complete the setup
+
+    
+![DC1](https://github.com/user-attachments/assets/6a193677-2dc5-4868-814e-97517b24d4b9)
+
+- Restart your PC once the setup is complete , and login again using "your admin username"@domain.com, together with the admin password.
