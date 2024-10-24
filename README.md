@@ -1,1 +1,5 @@
-# Active_directory_deployment_and_setup
+Active directory deployment and setup
+
+<p align="center">
+<img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
+</p>
