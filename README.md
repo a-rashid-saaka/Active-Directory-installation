@@ -55,6 +55,9 @@
 
 
 ![Screenshot (89)](https://github.com/user-attachments/assets/e4919f8e-fe95-40a6-b67e-17cbc112e414)
+<br>
+<br>
+<br>
 
 <h3>&#9313; Make VM1-DC the Domain Controller</h3>
 
@@ -107,11 +110,13 @@
 
 
 - You can now log back into VM1-DC with Sam Samuel's credentials
-
+  
 
   ![image](https://github.com/user-attachments/assets/f49f741d-b3ae-4e13-8448-affe1cd93007)
-
-  <h3>&#9315; Join Client-01 to domain </h3>
+<br>
+<br>
+<br>
+  <h3>&#9315; Join Client-1 to domain </h3>
 
 <p><strong> To let Client-1 join the domain, first set its primary DNS server to the private IP address of the domain controller(VM1-DC). This step is necessary for proper network communication.</strong></p>
 
@@ -140,3 +145,16 @@
 
   
   ![image](https://github.com/user-attachments/assets/75315127-b56a-41b1-a713-91be4a5d2998)
+<br>
+<br>
+<br>
+
+  <h3>&#9316; Setup Remote Desktop for non-admin users </h3>
+
+- Log back into Client-01 using "S-Samuels" and open Settings -> System -> Remote Desktop> Under "User Accounts" , click “Select users that can remotely access this PC”
+- Click on "Add" and search "Domain Users"
+
+  ![image](https://github.com/user-attachments/assets/b2143d92-1407-4f67-8818-603b41026771)
+
+- This will allow domain users without administrative privileges to log in with Client-1 PC
+
