@@ -156,7 +156,7 @@
 
   ![image](https://github.com/user-attachments/assets/b2143d92-1407-4f67-8818-603b41026771)
 
-- This will allow domain users without administrative privileges to log in with Client-1 PC
+- This will allow domain users without administrative privileges to remotely log into Client-1 PC
   <br>
   <br>
   <br>
