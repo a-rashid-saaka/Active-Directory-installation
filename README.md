@@ -151,10 +151,19 @@
 
   <h3>&#9316; Setup Remote Desktop for non-admin users </h3>
 
-- Log back into Client-01 using "S-Samuels" and open Settings -> System -> Remote Desktop> Under "User Accounts" , click “Select users that can remotely access this PC”
+- Log back into Client-01 using "S-Samuels" and open Settings -> System -> Remote Desktop> Under "User Accounts", click “Select users that can remotely access this PC”
 - Click on "Add" and search "Domain Users"
 
   ![image](https://github.com/user-attachments/assets/b2143d92-1407-4f67-8818-603b41026771)
 
 - This will allow domain users without administrative privileges to log in with Client-1 PC
+  <br>
+  <br>
+  <br>
+
+  <h2> Conclusion</h2>
+  
+<p>
+We have finished the setup of Active Directory. We configured it on the Domain Controller, creating a forest and an administrator account. We also connected Client-1 to the domain. In the next project, we will create users and test different Active Directory scenarios.. </p>
+
 
