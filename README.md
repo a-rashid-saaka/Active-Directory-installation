@@ -16,7 +16,7 @@
 <h2>Objectives</h2>
 <h3>Active Directory Installation</h3>
 
--  Setup and install Active Directory services on the specified Domain Controller virtual machine.
+-  Install Active Directory services on the specified Domain Controller virtual machine.
 
 <h3>Forest Creation</h3>
 
@@ -28,7 +28,7 @@
 
 <h3>Domain Joining</h3>
 
-- Connect the Client-1 virtual machine to the domain so it can communicate smoothly with the Active Directory.
+- Connect the Client-1 virtual machine to the domain to communicate smoothly with the Active Directory.
 
 <h3>Remote Desktop Setup</h3>
 
@@ -55,6 +55,9 @@
 
 
 ![Screenshot (89)](https://github.com/user-attachments/assets/e4919f8e-fe95-40a6-b67e-17cbc112e414)
+
+<h3>&#9313; Make VM1-DC the Domain Controller</h3>
+
 - After the installation, notice the flag in the top right corner of the Server Manager. 
 - Click on the flag to promote VM1-DC to a Domain Controller.
 
@@ -63,47 +66,62 @@
 
 
 
-- Select "Add a new forest" , enter your domain name, and click "Next"
+- Select "Add a new forest", enter your domain name, and click "Next"
 
 
   ![Screenshot (92)](https://github.com/user-attachments/assets/89a31c17-bf4f-4ff6-b721-2ad4c8e09eee)
 
-- Enter restore password and follow the prompt to complete the setup
+- Enter the restore password and follow the prompt to complete the setup
 
     
 ![DC1](https://github.com/user-attachments/assets/6a193677-2dc5-4868-814e-97517b24d4b9)
 
-- Restart your PC once the setup is complete , and login again using "your admin username"@domain.com, together with the admin password.
+- Restart your PC once the setup is complete, and log in again using "your admin username"@domain.com, together with the admin password.
 <br>
 <br>
 <br>
 
-<h3>&#9313; Create Organizational Units and Admin user</h3>
+<h3>&#9314; Create Organizational Units and Admin user</h3>
 
 - From the server manager, click on "Tools" and select "Active Directory Users and Computers"
 
 ![dc](https://github.com/user-attachments/assets/5cf69578-7c46-4f4d-941c-f481e1471457)
 
-- To create an "EMPLOYEES" organizational unit, right click on "domain.com" -> New -> Select "Organizational Unit"
+- To create an "EMPLOYEES" organizational unit, right-click on "domain.com" -> New -> Select "Organizational Unit"
 
   ![DC2](https://github.com/user-attachments/assets/918b3571-b06e-4dce-8e08-1b5f18def1b7)
 
-- Enter the name of the Organizational Unit and click on "OK".
+- Enter the Organizational Unit's name and click "OK".
 
     ![image](https://github.com/user-attachments/assets/927ffc31-455e-40a0-8593-672da31d8c74)
 
- - Right click on Users and create a new user named "Sam Samuels" with the username S-Samuels
+ - Right-click on Users and create a new user named "Sam Samuels" with the username S-Samuels
 
 
    ![image](https://github.com/user-attachments/assets/46acdade-a2d8-41d0-86a7-4d3ffef87572)
-- To make Sam Samuels an Admin, right click on his name -> Properties -> select " Member of" -> click on "Add" -> search "Domain Admins" and click "OK" -> click on "Apply" and "OK" for the change to take effect
+- To make Sam Samuels an Admin, right-click on his name -> Properties -> select " Member of" -> click on "Add" -> search "Domain Admins" and click "OK" -> click on "Apply" and "OK" for the change to take effect
 
   
   ![image](https://github.com/user-attachments/assets/7b2371ec-5983-448b-9039-4bd09ec7c1ed)
 ![image](https://github.com/user-attachments/assets/fde40a9f-6f52-4539-9558-1ebfbbecf8ca)
 
 
-- You can now log back in to VM1-DC with Sam Samuel's credentials
+- You can now log back into VM1-DC with Sam Samuel's credentials
 
 
   ![image](https://github.com/user-attachments/assets/f49f741d-b3ae-4e13-8448-affe1cd93007)
+
+  <h3>&#9315; Join Client-01 to domain </h3>
+
+<p><strong> To let Client-1 join the domain, first set its primary DNS server to the private IP address of the domain controller(VM1-DC). This step is necessary for proper network communication.</strong></p>
+
+- In your Azure Portal, select "Client-1" VM -> Select "Networking" and click on "Network Settings" -> Network interface and click on "DNS servers"
+- Add the private IP address of the domain controller(VM1-DC) as the primary DNS server and save the changes
+
+
+  ![image](https://github.com/user-attachments/assets/18386cc1-dcda-4181-b440-9ad18acff97f)
+
+- In the Client-1 PC  let's update the DNS settings by running "ipconfig /renew". Afterwards run "ipconfig /all" to confirm the change
+
+
+  ![image](https://github.com/user-attachments/assets/23a5ca1e-1191-4f2c-b7d2-7ee0d83426d4)
