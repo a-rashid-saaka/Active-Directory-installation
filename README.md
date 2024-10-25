@@ -7,7 +7,7 @@
 
 
 <p> 
-  This is a continuation of the first project that set up our Active Directory environment, we now move to the next step in our tutorial series..Welcome to the "Active Directory deployment and setup" project. We will cover the essentials of deploying and refining an Active Directory system, focusing on installation, forest creation, user account management, domain integration, and Remote Desktop access.
+  Welcome to the "Active Directory deployment and setup" project. This is a continuation of the first project that set up our Active Directory environment, we now move to the next step in our tutorial series.  We will cover the essentials of deploying and refining an Active Directory system, focusing on installation, forest creation, user account management, domain integration, and Remote Desktop access.
 </p>
 <h2>Prerequisites</h2>
 
@@ -121,7 +121,22 @@
 
   ![image](https://github.com/user-attachments/assets/18386cc1-dcda-4181-b440-9ad18acff97f)
 
-- In the Client-1 PC  let's update the DNS settings by running "ipconfig /renew". Afterwards run "ipconfig /all" to confirm the change
+- In the Client-1 PC  let's update the DNS settings by running "ipconfig /renew". Afterwards, run "ipconfig /all" to confirm the change
 
 
   ![image](https://github.com/user-attachments/assets/23a5ca1e-1191-4f2c-b7d2-7ee0d83426d4)
+
+  
+- While you are logged into the "Client-1" PC with the local admin credentials, select "Settings" -> System -> Rename this PC(Advanced) -> Change -> Choose "Domain" and enter "domain.com.
+- A login form pops up, enter the credentials for the domain admin with the username "S-Samuels".
+ 
+    
+    ![image](https://github.com/user-attachments/assets/6fff109b-30cc-4252-900c-7cd7970cfce4)
+
+    
+   Congratulations! You have successfully added Client-1 PC to the domain. The PC will restart for changes to take effect.
+   
+- You can confirm from the Domain Controller(VM1-DC) that "Client-1" PC has joined the Domain.
+
+  
+  ![image](https://github.com/user-attachments/assets/75315127-b56a-41b1-a713-91be4a5d2998)
