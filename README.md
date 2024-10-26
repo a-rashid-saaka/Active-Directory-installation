@@ -1,4 +1,4 @@
-  <h1 align="center">Active directory deployment and setup</h1>
+  <h1 align="center">Active Directory Deployment and Setup</h1>
 
 
 <p align="center">
