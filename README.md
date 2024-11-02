@@ -164,6 +164,6 @@
   <h2> Conclusion</h2>
   
 <p>
-We have finished the setup of Active Directory. We configured it on the Domain Controller, creating a forest and an administrator account. We also connected Client-1 to the domain. In the next project, we will create users and test different Active Directory scenarios.. </p>
+We have finished the setup of Active Directory. We configured it on the Domain Controller, creating a forest and an administrator account. We also connected Client-1 to the domain. In the next projects, we will create users and test different Active Directory scenarios.. </p>
 
 
